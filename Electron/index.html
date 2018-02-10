@@ -18,12 +18,53 @@
         <br/>
         <h1>Ejemplo de Electron</h1>
         <hr/>
+        <div class="row">
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-sm-10 col-md-10 col-lg-10">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Ejemplo Servicio</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="alert alert-warning" role="alert" id="alertaPaises">Buscando la lista de paises, espere por favor!!!!</div>
+                        <div class="alert alert-danger" role="alert" id="alertaPaisesError">Error!!! - Recarge la pagina por favor!!!!</div>
+                        <div class="row">
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-sm-10 col-md-10 col-lg-10">
+                                <div class="input-group">
+                                    <select class="custom-select" id="cmbPaises"></select>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button" id="btnPaisBuscar">Buscar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                            <div class="col-sm-10 col-md-10 col-lg-10" id="informacion"></div>
+                            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        </div>
     </div>
     <script>
         window.jQuery = window.$ = require('jquery');
     </script>
+    <script>
+        $(document).ready(function() {
+            $("#alertaPaisesError").hide();
+        });
+    </script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/cargaPaises.js"></script>
+    <script src="js/buscar.js"></script>
 </body>
 
 </html>

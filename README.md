@@ -81,10 +81,49 @@ npm install popper.js --save
 Luego, hacemos el Html, por ejemplo:
 
 ```html
+  <html>
+
+  <head>
+      <title>Ejemplo de Electron</title>
+      <meta http-equiv="content-type" content="text/html; utf-8">
+      <meta name="language" content="Spanish">
+      <meta name="content-language" content="es">
+      <meta name="robots" content="all">
+      <meta name="Keywords" content="ie, version, jquery, ponyo" />
+      <meta http-equiv="X-UA-Compatible" content="IE=IE10">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="img/ponyo.ico">
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+
+  <body>
+      <div class="container">
+          <br/>
+          <h1>Ejemplo de Electron</h1>
+          <hr/>
+      </div>
+      <script>
+          window.jQuery = window.$ = require('jquery');
+      </script>
+      <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+
+  </html>
+```
+
+## Paso 5 - Para ejecutar
+
+Es simple, desde la consola ejecutamos:
+
+```shell
+
+npm start
 
 ```
 
-## Paso 4 - Para el empaquetado
+
+## Paso 6 - Para el empaquetado
 
 ```shell
 npm run package-win
