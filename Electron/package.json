@@ -9,7 +9,9 @@
     "author": "Samuel Barrera",
     "license": "MIT",
     "dependencies": {
+        "bootstrap": "^4.0.0-beta",
         "electron": "^1.8.2",
-        "jquery": "^3.3.1"
+        "jquery": "^3.3.1",
+        "popper.js": "^1.12.9"
     }
 }

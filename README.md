@@ -67,7 +67,18 @@ Tras esto, crearemos el archivo **index.js** y lo editamos con algo similar a lo
 Como se vio en el punto anterior, nuestra pagina principal, la llamaremos **index.html**.
 En esta pagina podemos hacer alucion a archivos locales o remotos, asi que estamos a la disposicion de nuestra creatividad...
 
-Por ejemplo:
+Pero antes, requerimos algunas cosas, asi que volvemos a la consola y ejecutamos:
+
+```shell
+npm install jquery --save
+
+npm install bootstrap@4.0.0-beta --save
+
+npm install popper.js --save
+
+```
+
+Luego, hacemos el Html, por ejemplo:
 
 ```html
 
