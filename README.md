@@ -61,6 +61,18 @@ Tras esto, crearemos el archivo **index.js** y lo editamos con algo similar a lo
 
 ```
 
+
+## Paso 4 - Agregamos nuestra pagina principal
+
+Como se vio en el punto anterior, nuestra pagina principal, la llamaremos **index.html**.
+En esta pagina podemos hacer alucion a archivos locales o remotos, asi que estamos a la disposicion de nuestra creatividad...
+
+Por ejemplo:
+
+```html
+
+```
+
 ## Paso 4 - Para el empaquetado
 
 ```shell
